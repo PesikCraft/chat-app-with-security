@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Чат с друзьями</h2>
+        </div>
+        <div class="messages" id="messages">
+            <!-- Сообщения будут здесь -->
+        </div>
+        <form id="messageForm">
+            <input type="text" id="messageInput" placeholder="Напишите сообщение..." required />
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
